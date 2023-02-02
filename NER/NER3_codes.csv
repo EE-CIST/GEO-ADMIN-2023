@@ -1,0 +1,132 @@
+"GID_0";"COUNTRY";"NAME_1";"GID_1";"NAME_2";"GID_2";"NAME_3";"TYPE_3";"GID_3";"HASC_3"
+"NER";"Niger";"Agadez";"NER.1_1";"Arlit";"NER.1.1_1";"ZR Arlit";"Commune";"NER.1.1.1_1";NA
+"NER";"Niger";"Agadez";"NER.1_1";"Bilma";"NER.1.2_1";"Bilma";"Commune";"NER.1.2.1_1";NA
+"NER";"Niger";"Agadez";"NER.1_1";"Bilma";"NER.1.2_1";"Kawar";"Commune";"NER.1.2.2_1";NA
+"NER";"Niger";"Agadez";"NER.1_1";"Tchighozerine";"NER.1.3_1";"ZR Tchirozerine";"Commune";"NER.1.3.1_1";NA
+"NER";"Niger";"Diffa";"NER.2_1";"Diffa";"NER.2.1_1";"Bosso";"Commune";"NER.2.1.1_1";NA
+"NER";"Niger";"Diffa";"NER.2_1";"Diffa";"NER.2.1_1";"Diffa";"Commune";"NER.2.1.2_1";NA
+"NER";"Niger";"Diffa";"NER.2_1";"Diffa";"NER.2.1_1";"Komadougou";"Commune";"NER.2.1.3_1";NA
+"NER";"Niger";"Diffa";"NER.2_1";"Maïné-Soroa";"NER.2.2_1";"Goudoumaria";"Commune";"NER.2.2.1_1";NA
+"NER";"Niger";"Diffa";"NER.2_1";"Maïné-Soroa";"NER.2.2_1";"Maine Soroa";"Commune";"NER.2.2.2_1";NA
+"NER";"Niger";"Diffa";"NER.2_1";"N'Guigmi";"NER.2.3_1";"N' Guigmi";"Commune";"NER.2.3.1_1";NA
+"NER";"Niger";"Diffa";"NER.2_1";"N'Guigmi";"NER.2.3_1";"ZR N' Guigmi";"Commune";"NER.2.3.2_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Boboye";"NER.3.1_1";"Birni Ngaoure";"Commune";"NER.3.1.1_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Boboye";"NER.3.1_1";"Kiota";"Commune";"NER.3.1.2_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Boboye";"NER.3.1_1";"Koygolo";"Commune";"NER.3.1.3_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Dogon-Doutchi";"NER.3.2_1";"Dogondoutchi";"Commune";"NER.3.2.1_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Dogon-Doutchi";"NER.3.2_1";"Takassaba";"Commune";"NER.3.2.2_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Dogon-Doutchi";"NER.3.2_1";"Tchibiri";"Commune";"NER.3.2.3_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Dosso";"NER.3.3_1";"Dosso";"Commune";"NER.3.3.1_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Gaya";"NER.3.4_1";"Bana";"Commune";"NER.3.4.1_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Gaya";"NER.3.4_1";"Dioundou";"Commune";"NER.3.4.2_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Gaya";"NER.3.4_1";"Gaya";"Commune";"NER.3.4.3_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Gaya";"NER.3.4_1";"Karakara";"Commune";"NER.3.4.4_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Gaya";"NER.3.4_1";"Yelou";"Commune";"NER.3.4.5_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Gaya";"NER.3.4_1";"Zaboki";"Commune";"NER.3.4.6_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Loga";"NER.3.5_1";"Falwel";"Commune";"NER.3.5.1_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Loga";"NER.3.5_1";"Goubey";"Commune";"NER.3.5.2_1";NA
+"NER";"Niger";"Dosso";"NER.3_1";"Loga";"NER.3.5_1";"Sokorbe";"Commune";"NER.3.5.3_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Aguié";"NER.4.1_1";"Aguie";"Commune";"NER.4.1.1_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Aguié";"NER.4.1_1";"Gangara";"Commune";"NER.4.1.2_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Dakoro";"NER.4.2_1";"Balder Goula";"Commune";"NER.4.2.1_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Dakoro";"NER.4.2_1";"Birni N' Lalle";"Commune";"NER.4.2.2_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Dakoro";"NER.4.2_1";"Kornaka";"Commune";"NER.4.2.3_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Dakoro";"NER.4.2_1";"Tagris Soli";"Commune";"NER.4.2.4_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Dakoro";"NER.4.2_1";"ZR Dakoro";"Commune";"NER.4.2.5_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Groumdji";"NER.4.3_1";"Chadakori";"Commune";"NER.4.3.1_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Groumdji";"NER.4.3_1";"Guidan Roumdji";"Commune";"NER.4.3.2_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Groumdji";"NER.4.3_1";"Guidan Sori";"Commune";"NER.4.3.3_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Groumdji";"NER.4.3_1";"Sae Saboua";"Commune";"NER.4.3.4_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Groumdji";"NER.4.3_1";"Tibiri";"Commune";"NER.4.3.5_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Madarounfa";"NER.4.4_1";"Gabi";"Commune";"NER.4.4.1_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Madarounfa";"NER.4.4_1";"Madarounfa";"Commune";"NER.4.4.2_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Madarounfa";"NER.4.4_1";"Mjiratawa";"Commune";"NER.4.4.3_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Madarounfa";"NER.4.4_1";"Safo";"Commune";"NER.4.4.4_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Madarounfa";"NER.4.4_1";"Sarkin Yamma";"Commune";"NER.4.4.5_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Mayahi";"NER.4.5_1";"Kanembakache";"Commune";"NER.4.5.1_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Mayahi";"NER.4.5_1";"Mayahi";"Commune";"NER.4.5.2_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Tessaoua";"NER.4.6_1";"Korghom";"Commune";"NER.4.6.1_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Tessaoua";"NER.4.6_1";"Ourafane";"Commune";"NER.4.6.2_1";NA
+"NER";"Niger";"Maradi";"NER.4_1";"Tessaoua";"NER.4.6_1";"Tessaoua";"Commune";"NER.4.6.3_1";NA
+"NER";"Niger";"Niamey";"NER.5_1";"Niamey";"NER.5.1_1";"Lamorde";"Commune";"NER.5.1.1_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Bkonni";"NER.6.1_1";"Birni N' Konni";"Commune";"NER.6.1.1_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Bkonni";"NER.6.1_1";"Doguerawa";"Commune";"NER.6.1.2_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Bouza";"NER.6.2_1";"Bouza";"Commune";"NER.6.2.1_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Bouza";"NER.6.2_1";"Deoul";"Commune";"NER.6.2.2_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Illéla";"NER.6.3_1";"Illela";"Commune";"NER.6.3.1_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Keita";"NER.6.4_1";"Garhanga";"Commune";"NER.6.4.1_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Keita";"NER.6.4_1";"Keita";"Commune";"NER.6.4.2_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Keita";"NER.6.4_1";"Tamaske";"Commune";"NER.6.4.3_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Madaoua";"NER.6.5_1";"Madaoua";"Commune";"NER.6.5.1_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Tahoua";"NER.6.6_1";"Bambeye";"Commune";"NER.6.6.1_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Tahoua";"NER.6.6_1";"Kalfou";"Commune";"NER.6.6.2_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Tahoua";"NER.6.6_1";"Tahoua";"Commune";"NER.6.6.3_1";NA
+"NER";"Niger";"Tahoua";"NER.6_1";"Tchin-Tabarade";"NER.6.7_1";"ZR Tchin-Tabaraden";"Commune";"NER.6.7.1_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Filingué";"NER.7.1_1";"Imanan";"Commune";"NER.7.1.1_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Filingué";"NER.7.1_1";"Kourfeye";"Commune";"NER.7.1.2_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Filingué";"NER.7.1_1";"Tagazar";"Commune";"NER.7.1.3_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Filingué";"NER.7.1_1";"Tondikandia";"Commune";"NER.7.1.4_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Kollo";"NER.7.2_1";"Fakara";"Commune";"NER.7.2.1_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Kollo";"NER.7.2_1";"Hamdallye";"Commune";"NER.7.2.2_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Kollo";"NER.7.2_1";"Karma";"Commune";"NER.7.2.3_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Kollo";"NER.7.2_1";"Kirtachi";"Commune";"NER.7.2.4_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Kollo";"NER.7.2_1";"Koure";"Commune";"NER.7.2.5_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Kollo";"NER.7.2_1";"Libore";"Commune";"NER.7.2.6_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Kollo";"NER.7.2_1";"N'Dounga";"Commune";"NER.7.2.7_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Kollo";"NER.7.2_1";"Namaro";"Commune";"NER.7.2.8_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Ouallam";"NER.7.3_1";"Ouallam";"Commune";"NER.7.3.1_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Ouallam";"NER.7.3_1";"Simiri";"Commune";"NER.7.3.2_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Ouallam";"NER.7.3_1";"Tondikiwindi";"Commune";"NER.7.3.3_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Say";"NER.7.4_1";"Gueladio";"Commune";"NER.7.4.1_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Say";"NER.7.4_1";"Parc W";"Commune";"NER.7.4.2_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Say";"NER.7.4_1";"Say";"Commune";"NER.7.4.3_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Say";"NER.7.4_1";"Tamou";"Commune";"NER.7.4.4_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Say";"NER.7.4_1";"Torodi";"Commune";"NER.7.4.5_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Téra";"NER.7.5_1";"Dargol";"Commune";"NER.7.5.1_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Téra";"NER.7.5_1";"Diagorou";"Commune";"NER.7.5.2_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Téra";"NER.7.5_1";"Gorouol";"Commune";"NER.7.5.3_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Téra";"NER.7.5_1";"Kokoro";"Commune";"NER.7.5.4_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Téra";"NER.7.5_1";"Tera";"Commune";"NER.7.5.5_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Tillabéry";"NER.7.6_1";"Anzourou";"Commune";"NER.7.6.1_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Tillabéry";"NER.7.6_1";"Ayorou";"Commune";"NER.7.6.2_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Tillabéry";"NER.7.6_1";"Dessa";"Commune";"NER.7.6.3_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Tillabéry";"NER.7.6_1";"Kourtey";"Commune";"NER.7.6.4_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Tillabéry";"NER.7.6_1";"Sinder";"Commune";"NER.7.6.5_1";NA
+"NER";"Niger";"Tillabéry";"NER.7_1";"Tillabéry";"NER.7.6_1";"Tillaberi";"Commune";"NER.7.6.6_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Gouré";"NER.8.1_1";"Alakoss";"Commune";"NER.8.1.1_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Gouré";"NER.8.1_1";"Boune";"Commune";"NER.8.1.2_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Gouré";"NER.8.1_1";"Gamoa";"Commune";"NER.8.1.3_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Gouré";"NER.8.1_1";"Goure";"Commune";"NER.8.1.4_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Gouré";"NER.8.1_1";"Koutous";"Commune";"NER.8.1.5_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Gouré";"NER.8.1_1";"ZR Goure";"Commune";"NER.8.1.6_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Magaria";"NER.8.2_1";"Bande";"Commune";"NER.8.2.1_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Magaria";"NER.8.2_1";"Dantchiao";"Commune";"NER.8.2.2_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Magaria";"NER.8.2_1";"Doungass";"Commune";"NER.8.2.3_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Magaria";"NER.8.2_1";"Gouchi";"Commune";"NER.8.2.4_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Magaria";"NER.8.2_1";"Magaria";"Commune";"NER.8.2.5_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Magaria";"NER.8.2_1";"Mallaoua";"Commune";"NER.8.2.6_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Magaria";"NER.8.2_1";"Ouacha";"Commune";"NER.8.2.7_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Matameye";"NER.8.3_1";"Kantche";"Commune";"NER.8.3.1_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Alberkaram";"Commune";"NER.8.4.1_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Baban Tapki";"Commune";"NER.8.4.2_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Commune de Zinder";"Commune";"NER.8.4.3_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Dakoussa";"Commune";"NER.8.4.4_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Damagaram Takaya";"Commune";"NER.8.4.5_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Dogo";"Commune";"NER.8.4.6_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Droum";"Commune";"NER.8.4.7_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Gafati";"Commune";"NER.8.4.8_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Garagoumsa";"Commune";"NER.8.4.9_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Gouna";"Commune";"NER.8.4.10_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Guidimouni";"Commune";"NER.8.4.11_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Kissambana";"Commune";"NER.8.4.12_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Mirria";"Commune";"NER.8.4.13_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Moa";"Commune";"NER.8.4.14_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Ouame";"Commune";"NER.8.4.15_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Tirmini";"Commune";"NER.8.4.16_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Zermou";"Commune";"NER.8.4.17_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Mirriah";"NER.8.4_1";"Zinder";"Commune";"NER.8.4.18_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Tanout";"NER.8.5_1";"Gangara";"Commune";"NER.8.5.1_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Tanout";"NER.8.5_1";"Ollelawa";"Commune";"NER.8.5.2_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Tanout";"NER.8.5_1";"Tanout";"Commune";"NER.8.5.3_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Tanout";"NER.8.5_1";"Tarka";"Commune";"NER.8.5.4_1";NA
+"NER";"Niger";"Zinder";"NER.8_1";"Tanout";"NER.8.5_1";"ZR Tanout";"Commune";"NER.8.5.5_1";NA
