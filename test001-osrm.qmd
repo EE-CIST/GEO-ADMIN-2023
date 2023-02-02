@@ -1,0 +1,915 @@
+---
+title: "Annexe : Osrm mode d'emploi"
+editor: visual
+---
+
+Le package [osrm](https://cran.r-project.org/package=osrm) est une interface entre R et le service de routage [Open Source Routing Machine (OSRM)](https://github.com/Project-OSRM/osrm-backend). OSRM est un service de routage utilisant les données d'OpenStreetMap (OSM) data. Le package permet de calculer des routes, des matrices de distances, des isochrones en utilisant s'appuyant sur le réseau routier d'OSM.L'ensemble de cette annexe est directement inspiré d'un [article du Journal of Open Source Software (JOSS)](https://joss.theoj.org/papers/10.21105/joss.04574) et d'un [billet de blog](https://rgeomatic.hypotheses.org/author/rgeomatic) publiés par l'un des auteurs du package osrm, **Timothée Giraud** :
+
+L'objectif de cette annexe est double. Il s'agit :
+
+1.  de montrer les fonctionalités du package R `osrm`
+2.  de tester la qualité des résultats des calculs de distance sur chacun des pays africians participant à l'école d'été.
+
+## Préparation des données
+
+```{r}
+library(sf)
+library(mapsf)
+library(leaflet)
+library(osrm)
+library(knitr)
+library(dplyr)
+```
+
+Nous allons charger pour chacun des pays africains participant à l'EE CIST 2023 un fonds de carte des unités administratives de niveau 1 et 2 auquel on va ajouter la population la plus récente
+
+### Niveau 1
+
+```{r}
+code <- "BEN"
+rep<-paste0(code,"/")
+ficmap<-paste0(rep,"map_",code,"1_low.RDS")
+map_BEN<-readRDS(ficmap) %>% select(code=HASC_1,name=NAME_1)
+
+
+
+code <- "BFA"
+rep<-paste0(code,"/")
+ficmap<-paste0(rep,"map_",code,"1_low.RDS")
+map_BFA<-readRDS(ficmap) %>% select(code=HASC_1,name=NAME_1)
+
+code <- "CIV"
+rep<-paste0(code,"/")
+ficmap<-paste0(rep,"map_",code,"1_low.RDS")
+map_CIV<-readRDS(ficmap) %>% select(code=HASC_1,name=NAME_1)
+
+code <- "MLI"
+rep<-paste0(code,"/")
+ficmap<-paste0(rep,"map_",code,"1_low.RDS")
+map_MLI<-readRDS(ficmap) %>% select(code=HASC_1,name=NAME_1)
+
+code <- "NER"
+rep<-paste0(code,"/")
+ficmap<-paste0(rep,"map_",code,"1_low.RDS")
+map_NER<-readRDS(ficmap) %>% select(code=HASC_1,name=NAME_1)
+
+code <- "SEN"
+rep<-paste0(code,"/")
+ficmap<-paste0(rep,"map_",code,"1_low.RDS")
+map_SEN<-readRDS(ficmap) %>% select(code=HASC_1,name=NAME_1)
+
+
+code <- "TGO"
+rep<-paste0(code,"/")
+ficmap<-paste0(rep,"map_",code,"1_low.RDS")
+map_TGO<-readRDS(ficmap) %>% select(code=HASC_1,name=NAME_1)
+```
+
+
+
+## Calcul d'un itinéraire avec `osrmRoute`
+
+### Exemple détaillé
+
+La fonction `osrmRoute` permet de calculer le plus court chemin routier entre deux points dont on connaît les latitudes et longitudes en degré décimal. Soit par exemple trois lieux situés au Bénin dont on récupère ls coordonnées précises avec un GPS ou avec Google Map
+
+-   
+
+    1.  Université de Parakou : Latitude = 9.3354, Longitude = 2.6466
+
+-   
+
+    2.  IRESP à Ouidah : Latitude = 6.3491, Longitude = 2.0873
+
+-   
+
+    3.  Aéroport de Cotonou :Latitude = 6.3568, Longitude 2.38333
+
+On transforme ces trois points en un tableau de coordonnées de type `data.frame`
+
+```{r}
+code <- c(1,2,3)
+nom <- c("Université de Parakou", "IRESP à Ouidah", "Aéroport de Cotonou")
+longitude<-c(2.6466,2.0873,2.38333 )
+latitude <-c(9.3354, 6.3491,6.3568)
+tabcoo<-data.frame(code,nom, latitude, longitude)
+kable(tabcoo, caption = "Fichier de coordonnées")
+```
+
+Puis on transforme les coordonnées en un fichier cartographique au format sf en n'oubliant pas de fixer le système de projection (crs) à 4326 puisqu'il s'agit de latitudes et longitudes non projetées.
+
+```{r}
+mapcoo<-st_as_sf(tabcoo,coords = c("longitude","latitude"))
+st_crs(mapcoo)<-4326
+
+
+```
+
+On peut vérifier que les coordonnées sont justes en superposant avec le fond de carte du pays
+
+```{r}
+plot(map_BEN$geometry, col="lightyellow")
+plot(mapcoo$geometry,col="red", add=T,pch=20)
+```
+
+On va maintenant calculer les routes entre chacun des points pris deux à deux puis les stocker dans un même fichier. Le paramètre `overview` permet d'obtenir un tracé exact ("full") ou simplifié ("simplified") du chemin reliant les deux villes.
+
+```{r}
+road12 <-osrmRoute(mapcoo[1,],mapcoo[2,],overview = "full")
+road13 <-osrmRoute(mapcoo[1,],mapcoo[3,],overview = "full")
+road23 <-osrmRoute(mapcoo[2,],mapcoo[3,],overview = "full")
+roads <- rbind(road12,road13,road23)
+kable(roads,label = "Estimation des distances routières ")
+
+```
+
+On peut ainsi obtenir les estimations de temps entre chaque paire de ville :
+
+-   la distance entre les points 1 et 2 est de 400 km et nécessite 351 minutes
+-   la distance entre les points 1 et 3 est de 415 km et nécessite 355 minutes
+-   la distance entre les points 2 et 3 est de 40 km et nécessite 60 minutes
+
+Mais on peut aussi cartographier le tracé des itinéraires de plus court chemin car les objets produits sont des polylines de type sf.
+
+```{r}
+
+plot(map_BEN$geometry, col="lightyellow",lwd=1)
+plot(mapcoo$geometry,col="red", add=T,pch=20)
+plot(roads$geometry, col="blue",lwd=2, add=T)
+```
+
+Si on dispose d'internet, la cartographie pourra également se faire via leaflet afin de pouvoir zoomer
+
+```{r}
+
+leaflet() %>% addTiles() %>% 
+              addPolygons(data=map_BEN,
+                          color = "black",
+                          fillColor = "lightyellow",
+                          weight = 1,
+                          opacity = 0.3,
+                          fillOpacity = 0.1) %>%
+              addCircleMarkers(data = mapcoo,
+                               col="red",
+                               radius = 5,
+                               label = ~nom)%>%
+              addPolylines(data=roads,
+                           color="blue",
+                           label = paste("temps =" ,round(roads$duration,0), "mn  / ",
+                                         
+                                         "distance =" ,round(roads$distance,0), "km" ))
+
+
+```
+
+### Création d'une fonction
+
+Dans la logique de R, un programme que l'on est ameé à utiliser à de nombreuses reprises peut-être transformé en fonction. On va montrer à titre d'exemple comment créer une petite fonction cartographique permettant de calculer la distance entre deux villes et de visualiser son tracé sur une carte statique
+
+-   
+
+    1.  Université de Parakou : Latitude = 9.3354, Longitude = 2.6466
+
+-   
+
+    2.  IRESP à Ouidah : Latitude = 6.3491, Longitude = 2.0873
+
+-   
+
+    3.  Aéroport de Cotonou :Latitude = 6.3568, Longitude 2.38333
+
+```{r}
+library(mapsf)
+library(osrm)
+
+itineraire <- function(map=map_BEN,
+                       lon1 = 2.6466,
+                       lat1 = 9.3354,
+                       nom1 = "Parakou",
+                       lon2 = 2.38333,
+                       lat2 = 6.3568,
+                       nom2 = "Cotonou") {
+
+  # (1) Crée le tableau de coordonnées
+  code <- c(1,2)
+  nom <- c(nom1,nom2)
+  longitude<-c(lon1,lon2 )
+  latitude <-c(lat1,lat2)
+  tabcoo<-data.frame(code,nom, latitude, longitude)
+
+  # (2) transforme le tableau en fichier sf
+  mapcoo<-st_as_sf(tabcoo,coords = c("longitude","latitude"))
+  st_crs(mapcoo)<-4326
+  
+  # (3) Calcule la route
+  road<-osrmRoute(mapcoo[1,],mapcoo[2,],overview = "full")
+  
+  # (4)arrondit et converti les distances
+  kilom = round(road$distance)
+  heures = trunc(road$duration/60)
+  minutes = round(road$duration-heures*60,0)
+  
+  # (4) Trace la carte
+  plot(map$geometry, 
+       col="lightyellow",
+       lwd=1,
+       main = paste ("Itinéraire routier de ",nom1, "à", nom2),
+       sub = paste("Chemin routier le plus rapide :  ", kilom,"km parcourus en ",heures,"h",minutes,"mn")
+       )
+  plot(mapcoo$geometry,col="red", add=T,pch=20)
+  plot(road$geometry, col="blue",lwd=2, add=T)
+  
+  # (5) Ajoute le nom des deux villes
+  text(st_coordinates(mapcoo),
+       mapcoo$nom,
+       col="red",
+       cex=0.6,
+       pos = 3)
+  
+}
+
+```
+
+Cette fonction comporte sept paramètres que l'on peut modifier. Par défaut, elle calcule l'itinéraire de Parakou à Cotonou et trace celui-ci sur une carte du Bénin :
+
+```{r}
+itineraire()
+```
+
+Mais on peut évidemment appliquer notre fonction à d'autres villes du Bénin ou des autres pays en changeant le fonds de carte et les coordonnées des villes.
+
+### Test sur les sept pays
+
+On réalise un test d'application de la fonction sur deux villes éloignées de chacun des pays afin que les formateurs ou stagiaires originaires de ces pays puisse évaluer la fiabilité de l'estimation réalisée avec osrm.
+
+#### Bénin
+
+```{r}
+itineraire(map = map_BEN,
+           lon1 = 2.083506593011896,
+           lat1 = 6.357811268030744, 
+           nom1 = "Ouidah",
+           lon2 =  3.3924974113829283,
+           lat2 = 11.866491356662584, 
+           nom2 ="Malanville")
+
+```
+
+#### Burkina Faso
+
+```{r}
+itineraire(map = map_BFA,
+           lon1 = -4.29723492738118,
+           lat1 = 11.172345693623114, 
+           nom1 = "Bobo-Dioulasso",
+           lon2 =  1.788768413655342,
+           lat2 = 12.072590807114628, 
+           nom2 ="Diapaga")
+
+```
+
+#### Côte d'Ivoire
+
+```{r}
+itineraire(map = map_CIV,
+           lon1 = -4.018911503993845,
+           lat1 = 5.3222544151294, 
+           nom1 = "Abidjan",
+           lon2 =  -7.563758016545198,
+           lat2 = 9.506805026792389, 
+           nom2 ="Odienne")
+
+```
+
+#### Mali
+
+```{r}
+itineraire(map = map_MLI,
+           lon1 = -8.000665163349485,
+           lat1 = 12.645413647326876,
+           nom1 = "Bamako",
+           lon2 =  -0.006709784559897631,
+           lat2 = 16.252474049615106,
+           nom2 ="Gao")
+
+```
+
+#### Niger
+
+```{r}
+itineraire(map = map_NER,
+           lon1 = 2.114475245899667,
+           lat1 = 13.508352797051339, 
+           nom1 = "Niamey",
+           lon2 =  12.611928275341805,
+           lat2 = 13.31531890351538, 
+           nom2 ="Diffa")
+
+```
+
+#### Sénégal
+
+```{r}
+itineraire(map = map_SEN,
+           lon1 = -17.448071746669225 ,
+           lat1 = 14.69309638191815, 
+           nom1 = "Dakar",
+           lon2 =  -12.1800730388477,
+           lat2 = 12.55587304602405, 
+           nom2 ="Kedougou")
+
+```
+
+#### Togo
+
+```{r}
+itineraire(map = map_TGO,
+           lon1 = 1.2257020314902736 ,
+           lat1 = 6.124526439193556, 
+           nom1 = "Lomé",
+           lon2 =  0.20488950340165146,
+           lat2 = 10.866462486734356, 
+           nom2 ="Dapaong")
+
+```
+
+## Tracé d'isolignes avec les fonctions `osrmIsochrone` et `osrmIsodistance`
+
+Ces deux fonctions permettent de construire une carte de l'accessibilité d'un point par la route en reliant par des lignes les points situés à la même distance routière mesurée soit en temps, soit en coût. Elles peuvent être très utiles pour un ensemble d'applications en analyse spatiale. Elles permettent aussi plus généralement de construire de nouvelles variables explicatives telles que le fait d'être à moins d'une heure d'un hôpital.
+
+### Exemple détaillé
+
+Nous penons l'exemple du **marché de gros de Bouaké** dont les coordonnées de latitude et longitude ont été relevées par GPS ou sur Google Maps :
+
+-   Longitude = -5.02481
+-   Latitude = 7.69716
+
+**Attention ! :** Lorsqu'on cherche les coordonnées avec Google Maps, celui-ci fournit en premier la latitude et en second la longitude. Or, dans les packages `sf` ou `osrm` c'est l'inverse ! Il faut placer en premier la longitude et en second la latitude lorsqu'on fournit un jeu de coordonnées. Sinon on peut se retrouver à chercher des routes au milieu de l'océan ...
+
+La question générale à laquelle nous voulons répondre est la suivante : "*Quelle est l'accessibilité de ce marché pour la population de Côte d'Ivoire ?*". Ce qui conduit à des questions plus précise du genre :
+
+-   Quels départements sont situés à moins de deux heures de Bouaké ?
+-   Combien d'habitants peut-on trouver dans un rayon de deux heures autour de Bouaké ?
+-   Quelle distance routière faut-il parcourir depuis Bouaké pour atteindre la moitié des habitants du pays ?
+-   etc.
+
+#### Calcul des isochrones
+
+L'emploi de la fonction osrmIsochrone est très simple puisqu'il suffit de lui fournir les coordonnées du point central (ici le marché de Bouaké) ainsi que les isochrones que l'on souhaite tracer mesurées en minutes. Il arrive toutefois que le temps de calcul soit assez long car il est effectué sur un serveur distant via une connexion internet. On aura donc intérêt à stocker les résultats une fois obtenus.
+
+La précision du tracé dépend du paramètre `res` qui définit une grille d'interpolation de dimension res\*res. Il est préférable de laisser le paramètre à sa valeur par défaut, sauf si l'on veut un résultat vraiment très précis. Mais alors le temps peut-être long et le calcul peut échouer
+
+```{r, eval=FALSE}
+iso <- osrmIsochrone(loc = c(-5.02481, 7.69716 ),breaks = c(0,60,120,180,240))
+saveRDS(iso,"tmp/bouake_isochrone_240.RDS")
+```
+
+On peut ensuite tracer les isolignes sur une carte en utilisant un package de cartographie statique comme mapsf. Il est dans ce cas préférable de commencer par projeter les cartes pour obtenir une échelle correcte
+
+```{r}
+iso<-readRDS("tmp/bouake_isochrone_240.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map_CIV
+map_proj<-st_transform(map,2043)
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_val_rnd = -3,
+       add=T)
+
+mf_layout(title = "Isochrones routières depuis Bouaké (Côte d'Ivoire)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
+
+Il est également possible, si on dispose d'une connexion internet et si l'on maîtrise le package `leaflet` de produire une carte interactive des isochrones. Il faut alors revenir aux fonds de carte non projetés (epsg = 4326)
+
+```{r}
+iso<-readRDS("tmp/bouake_isochrone_240.RDS")
+map<-map1_CIV
+mypal<-terrain.colors(8)[1:4]
+leaflet() %>% addTiles() %>% 
+              addPolygons(data=map,
+                          color = "black",
+                          fillColor = "lightyellow",
+                          weight = 1,
+                          opacity = 0.3,
+                          fillOpacity = 0.1) %>%
+              addPolygons(data=iso,
+                          color=NA,fillOpacity = 0.6,
+                           fillColor=mypal,)%>%
+              addPolylines(data=iso,
+                           color="black",
+                           weight = 1,
+                           label = ~isomax) %>%
+              addMarkers(lng = -5.02481,
+                         lat =7.69716,
+                         label = "Marché de Bouaké" )
+
+```
+
+### Test sur les sept pays
+
+On va calculer pour chaque pays le temps routier à partir de la capitale du pays (palais présidentiel) afin de voir quelle partie du territoire est accessible en 8h maximum.
+
+#### Bénin
+
+```{r, eval=FALSE, echo=FALSE}
+lon<-2.4082214030963156
+lat <- 6.350786238382105
+nom <- "Cotonou"
+iso <- osrmIsochrone(loc = c(lon, lat ),breaks = c(0,60,120,180,240,300,360,420,480))
+saveRDS(iso,"tmp/Cotonou_isochrone_480.RDS")
+```
+
+```{r Cotonou, echo=FALSE}
+iso<-readRDS("tmp/Cotonou_isochrone_480.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map1_BEN
+map_proj<-st_transform(map,2043)
+
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240,300,360,420,480),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_val_rnd = -3,
+       add=T)
+mf_label(map_proj,
+         col= "black",
+         bg = "white",
+         halo=T,
+         cex = 0.5,
+         var = "name")
+
+mf_layout(title = "Isochrones routières depuis Cotonou (Bénin)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
+
+#### Burkina Faso
+
+```{r, eval=FALSE, echo=FALSE}
+lon<- -1.5027220296916664
+lat <- 12.292454391310164
+nom <- "Ouagadougou"
+iso <- osrmIsochrone(loc = c(lon, lat ),breaks = c(0,60,120,180,240,300,360,420,480))
+saveRDS(iso,"tmp/Ouagadougou_isochrone_480.RDS")
+```
+
+```{r Ouaga, echo=FALSE}
+iso<-readRDS("tmp/Ouagadougou_isochrone_480.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map1_BFA
+map_proj<-st_transform(map,2043)
+
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240,300,360,420,480),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_val_rnd = -3,
+       add=T)
+mf_label(map_proj,
+         col= "black",
+         bg = "white",
+         halo=T,
+         cex = 0.5,
+         var = "name")
+
+mf_layout(title = "Isochrones routières depuis Ouagadougou (Burkina Faso)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
+
+#### Côte d'Ivoire
+
+On chosit en premier le *palais présidentiel* d'Abidjan puis on établit la même carte pour la *résidence présidentielle* de Yamoussoukro.
+
+```{r, eval=FALSE, echo=FALSE}
+lon<- -4.022912142457634
+lat <- 5.318906556942299
+nom <- "Abidjan"
+iso <- osrmIsochrone(loc = c(lon, lat ),breaks = c(0,60,120,180,240,300,360,420,480))
+saveRDS(iso,"tmp/Abidjan_isochrone_480.RDS")
+```
+
+```{r Abidj, echo=FALSE}
+iso<-readRDS("tmp/Abidjan_isochrone_480.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map1_CIV
+map_proj<-st_transform(map,2043)
+
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240,300,360,420,480),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_val_rnd = -3,
+       add=T)
+mf_label(map_proj,
+         col= "black",
+         bg = "white",
+         halo=T,
+         cex = 0.5,
+         var = "name")
+
+mf_layout(title = "Isochrones routières depuis Abidjan (Côte d'Ivoire)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
+
+```{r, eval=FALSE, echo=FALSE}
+lon<- -5.282265689976725
+lat <- 6.824708921059679 
+nom <- "Yamoussoukro"
+iso <- osrmIsochrone(loc = c(lon, lat ),breaks = c(0,60,120,180,240,300,360,420,480))
+saveRDS(iso,"tmp/Yamoussoukro_isochrone_480.RDS")
+```
+
+```{r Yamou, echo=FALSE}
+iso<-readRDS("tmp/Yamoussoukro_isochrone_480.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map1_CIV
+map_proj<-st_transform(map,2043)
+
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240,300,360,420,480),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_val_rnd = -3,
+       add=T)
+mf_label(map_proj,
+         col= "black",
+         bg = "white",
+         halo=T,
+         cex = 0.5,
+         var = "name")
+
+mf_layout(title = "Isochrones routières depuis Yamoussoukro (Côte d'Ivoire)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
+
+#### Mali
+
+```{r, eval=FALSE, echo=FALSE}
+lon<- -8.006624562707495
+lat <- 12.659489618932241
+nom <- "Bamako"
+iso <- osrmIsochrone(loc = c(lon, lat ),breaks = c(0,60,120,180,240,300,360,420,480))
+saveRDS(iso,"tmp/Bamako_isochrone_480.RDS")
+```
+
+```{r Bamako, echo=FALSE}
+iso<-readRDS("tmp/Bamako_isochrone_480.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map1_MLI
+map_proj<-st_transform(map,2043)
+
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240,300,360,420,480),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_pos = "right",
+       leg_val_rnd = -3,
+       add=T)
+mf_label(map_proj,
+         col= "black",
+         bg = "white",
+         halo=T,
+         cex = 0.5,
+         var = "name")
+
+mf_layout(title = "Isochrones routières depuis Bamako (Mali)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
+
+#### Niger
+
+```{r, eval=FALSE, echo=FALSE}
+lon<- 2.0897635710078206
+lat <- 13.521657072564658 
+nom <- "Niamey"
+iso <- osrmIsochrone(loc = c(lon, lat ),breaks = c(0,60,120,180,240,300,360,420,480))
+saveRDS(iso,"tmp/Niamey_isochrone_480.RDS")
+```
+
+```{r Niamey, echo=FALSE}
+iso<-readRDS("tmp/Niamey_isochrone_480.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map1_NER
+map_proj<-st_transform(map,2043)
+
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240,300,360,420,480),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_pos = "right",
+       leg_val_rnd = -3,
+       add=T)
+mf_label(map_proj,
+         col= "black",
+         bg = "white",
+         halo=T,
+         cex = 0.5,
+         var = "name")
+
+mf_layout(title = "Isochrones routières depuis Niamey (Niger)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
+
+#### Sénégal
+
+```{r, eval=FALSE, echo=FALSE}
+lon<- -17.433824443460463
+lat <- 14.663906010792694 
+nom <- "Dakar"
+iso <- osrmIsochrone(loc = c(lon, lat ),breaks = c(0,60,120,180,240,300,360,420,480))
+saveRDS(iso,"tmp/Dakar_isochrone_480.RDS")
+```
+
+```{r Dakar, echo=FALSE}
+iso<-readRDS("tmp/Dakar_isochrone_480.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map1_SEN
+map_proj<-st_transform(map,2043)
+
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240,300,360,420,480),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_pos = "right",
+       leg_val_rnd = -3,
+       add=T)
+mf_label(map_proj,
+         col= "black",
+         bg = "white",
+         halo=T,
+         cex = 0.5,
+         var = "name")
+
+mf_layout(title = "Isochrones routières depuis Dakar (Sénégal)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
+
+#### Togo
+
+```{r, eval=FALSE, echo=FALSE}
+lon<- 1.2150309811993627 
+lat <- 6.121513043288549 
+nom <- "Lomé"
+iso <- osrmIsochrone(loc = c(lon, lat ),breaks = c(0,60,120,180,240,300,360,420,480))
+saveRDS(iso,"tmp/Lome_isochrone_480.RDS")
+```
+
+```{r Lome, echo=FALSE}
+iso<-readRDS("tmp/Lome_isochrone_480.RDS")
+iso_proj<-st_transform(iso,2043)
+map<-map1_TGO
+map_proj<-st_transform(map,2043)
+
+
+mf_init(map_proj,theme = "darkula")
+mf_map(map_proj, type="base",
+       col="lightyellow",
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(iso_proj, 
+       type="choro",
+       var="isomin",
+       breaks=c(0,60,120,180,240,300,360,420,480),
+       col=NA,
+       leg_pos = "left",
+       leg_title = "Temps (mn)",
+       leg_val_rnd = 0,
+       border="white",
+       lwd=0.01,
+       add=T)
+mf_map(map_proj, type="base",
+       col=NA,
+       border = "gray",
+       lwd=0.4,
+       add=T)
+mf_map(map_proj, type="prop",
+       col="red",
+       var="pop",
+       inches=0.1,
+       leg_title = "Population",
+       leg_pos = "right",
+       leg_val_rnd = -3,
+       add=T)
+mf_label(map_proj,
+         col= "black",
+         bg = "white",
+         halo=T,
+         cex = 0.5,
+         var = "name")
+
+mf_layout(title = "Isochrones routières depuis Lomé (Togo)",
+          frame = T,
+          credits = "Calculs effectués avec osrm"
+          )
+```
