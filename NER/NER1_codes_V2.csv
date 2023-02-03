@@ -1,0 +1,9 @@
+GID_0;COUNTRY;NAME_1;TYPE_1;GID_1;HASC_1;ADMIN1PCOD;POP2022
+NER;Niger;Agadez;Département;NER.1_1;NE.AG;NER001;668998
+NER;Niger;Diffa;Département;NER.2_1;NE.DF;NER002;815339
+NER;Niger;Dosso;Département;NER.3_1;NE.DS;NER003;2944261
+NER;Niger;Maradi;Département;NER.4_1;NE.MA;NER004;4893425
+NER;Niger;Niamey;Communauté Urbaine;NER.5_1;NE.NI;NER008;1407633
+NER;Niger;Tahoua;Département;NER.6_1;NE.TH;NER005;4776697
+NER;Niger;Tillabéry;Département;NER.7_1;NE.TL;NER006;3903599
+NER;Niger;Zinder;Département;NER.8_1;NE.ZI;NER007;5095144
