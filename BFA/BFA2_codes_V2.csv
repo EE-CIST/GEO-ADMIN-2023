@@ -1,46 +1,46 @@
-GID_0;COUNTRY;NAME_1;GID_1;NAME_2;TYPE_2;GID_2;HASC_2;ADMIN2PCOD;POP2019
-BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Balé;Province;BFA.1.1_1;BF.BO.BA;BF4601;305193
-BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Banwa;Province;BFA.1.2_1;BF.BO.BW;BF4602;382490
-BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Kossi;Province;BFA.1.3_1;BF.BO.KS;BF4603;388559
-BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Mouhoun;Province;BFA.1.4_1;BF.BO.MO;BF4604;424240
-BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Nayala;Province;BFA.1.5_1;BF.BO.NY;BF4605;227112
-BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Sourou;Province;BFA.1.6_1;BF.BO.SR;BF4606;303001
-BFA;Burkina Faso;Cascades;BFA.2_1;Comoé;Province;BFA.2.1_1;BF.CD.KM;BF4701;669532
-BFA;Burkina Faso;Cascades;BFA.2_1;Léraba;Province;BFA.2.2_1;BF.CD.LE;BF4702;181744
-BFA;Burkina Faso;Centre;BFA.7_1;Kadiogo;Province;BFA.7.1_1;BF.CT.KA;BF1300;2966307
-BFA;Burkina Faso;Centre-Est;BFA.3_1;Boulgou;Province;BFA.3.1_1;BF.CE.BL;BF4801;789282
-BFA;Burkina Faso;Centre-Est;BFA.3_1;Koulpélogo;Province;BFA.3.2_1;BF.CE.KL;BF4802;385799
-BFA;Burkina Faso;Centre-Est;BFA.3_1;Kouritenga;Province;BFA.3.3_1;BF.CE.KR;BF4803;480765
-BFA;Burkina Faso;Centre-Nord;BFA.4_1;Bam;Province;BFA.4.1_1;BF.CN.BM;BF4901;398553
-BFA;Burkina Faso;Centre-Nord;BFA.4_1;Namentenga;Province;BFA.4.2_1;BF.CN.NM;BF4902;475527
-BFA;Burkina Faso;Centre-Nord;BFA.4_1;Sanmatenga;Province;BFA.4.3_1;BF.CN.ST;BF4903;862072
-BFA;Burkina Faso;Centre-Ouest;BFA.5_1;Boulkiemdé;Province;BFA.5.1_1;BF.CO.BK;BF5001;700924
-BFA;Burkina Faso;Centre-Ouest;BFA.5_1;Sanguié;Province;BFA.5.2_1;BF.CO.SG;BF5002;410555
-BFA;Burkina Faso;Centre-Ouest;BFA.5_1;Sissili;Province;BFA.5.3_1;BF.CO.SS;BF5003;307664
-BFA;Burkina Faso;Centre-Ouest;BFA.5_1;Ziro;Province;BFA.5.4_1;BF.CO.ZR;BF5004;270578
-BFA;Burkina Faso;Centre-Sud;BFA.6_1;Bazèga;Province;BFA.6.1_1;BF.CS.BZ;BF5101;319215
-BFA;Burkina Faso;Centre-Sud;BFA.6_1;Nahouri;Province;BFA.6.2_1;BF.CS.NR;BF5102;228031
-BFA;Burkina Faso;Centre-Sud;BFA.6_1;Zoundwéogo;Province;BFA.6.3_1;BF.CS.ZW;BF5103;649961
-BFA;Burkina Faso;Est;BFA.8_1;Gnagna;Province;BFA.8.1_1;BF.ES.GG;BF5201;596841
-BFA;Burkina Faso;Est;BFA.8_1;Gourma;Province;BFA.8.2_1;BF.ES.GM;BF5202;456817
-BFA;Burkina Faso;Est;BFA.8_1;Komandjoari;Province;BFA.8.3_1;BF.ES.KJ;BF5203;126332
-BFA;Burkina Faso;Est;BFA.8_1;Kompienga;Province;BFA.8.4_1;BF.ES.KP;BF5204;130926
-BFA;Burkina Faso;Est;BFA.8_1;Tapoa;Province;BFA.8.5_1;BF.ES.TA;BF5205;523250
-BFA;Burkina Faso;Haut-Bassins;BFA.9_1;Houet;Province;BFA.9.1_1;BF.HB.HO;BF5301;1409904
-BFA;Burkina Faso;Haut-Bassins;BFA.9_1;Kénédougou;Province;BFA.9.2_1;BF.HB.KN;BF5302;435108
-BFA;Burkina Faso;Haut-Bassins;BFA.9_1;Tuy;Province;BFA.9.3_1;BF.HB.TU;BF5303;345817
-BFA;Burkina Faso;Nord;BFA.10_1;Loroum;Province;BFA.10.1_1;BF.NO.LO;BF5401;205394
-BFA;Burkina Faso;Nord;BFA.10_1;Passoré;Province;BFA.10.2_1;BF.NO.PA;BF5402;447406
-BFA;Burkina Faso;Nord;BFA.10_1;Yatenga;Province;BFA.10.3_1;BF.NO.YT;BF5403;783269
-BFA;Burkina Faso;Nord;BFA.10_1;Zondoma;Province;BFA.10.4_1;BF.NO.ZM;BF5404;241473
-BFA;Burkina Faso;Plateau-Central;BFA.11_1;Ganzourgou;Province;BFA.11.1_1;BF.PC.GZ;BF5501;452074
-BFA;Burkina Faso;Plateau-Central;BFA.11_1;Kourwéogo;Province;BFA.11.2_1;BF.PC.KW;BF5502;189937
-BFA;Burkina Faso;Plateau-Central;BFA.11_1;Oubritenga;Province;BFA.11.3_1;BF.PC.OB;BF5503;333557
-BFA;Burkina Faso;Sahel;BFA.12_1;Oudalan;Province;BFA.12.1_1;BF.SA.OD;BF5601;297228
-BFA;Burkina Faso;Sahel;BFA.12_1;Séno;Province;BFA.12.2_1;BF.SA.SE;BF5602;385900
-BFA;Burkina Faso;Sahel;BFA.12_1;Soum;Province;BFA.12.3_1;BF.SA.SM;BF5603;516396
-BFA;Burkina Faso;Sahel;BFA.12_1;Yagha;Province;BFA.12.4_1;BF.SA.YG;BF5604;238324
-BFA;Burkina Faso;Sud-Ouest;BFA.13_1;Bougouriba;Province;BFA.13.1_1;BF.SO.BB;BF5701;148270
-BFA;Burkina Faso;Sud-Ouest;BFA.13_1;Ioba;Province;BFA.13.2_1;BF.SO.IO;BF5702;266294
-BFA;Burkina Faso;Sud-Ouest;BFA.13_1;Noumbiel;Province;BFA.13.3_1;BF.SO.NB;BF5703;103673
-BFA;Burkina Faso;Sud-Ouest;BFA.13_1;Poni;Province;BFA.13.4_1;BF.SO.PO;BF5704;373292
+GID_0;COUNTRY;NAME_1;GID_1;NAME_2;TYPE_2;GID_2;HASC_2;ADMIN2PCOD;POP2019;IPUMS_2
+BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Balé;Province;BFA.1.1_1;BF.BO.BA;BF4601;305193;854001031
+BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Banwa;Province;BFA.1.2_1;BF.BO.BW;BF4602;382490;854001032
+BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Kossi;Province;BFA.1.3_1;BF.BO.KS;BF4603;388559;854001013
+BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Mouhoun;Province;BFA.1.4_1;BF.BO.MO;BF4604;424240;854001015
+BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Nayala;Province;BFA.1.5_1;BF.BO.NY;BF4605;227112;854001040
+BFA;Burkina Faso;Boucle du Mouhoun;BFA.1_1;Sourou;Province;BFA.1.6_1;BF.BO.SR;BF4606;303001;854001027
+BFA;Burkina Faso;Cascades;BFA.2_1;Comoé;Province;BFA.2.1_1;BF.CD.KM;BF4701;669532;854002006
+BFA;Burkina Faso;Cascades;BFA.2_1;Léraba;Province;BFA.2.2_1;BF.CD.LE;BF4702;181744;854002038
+BFA;Burkina Faso;Centre;BFA.7_1;Kadiogo;Province;BFA.7.1_1;BF.CT.KA;BF1300;2966307;854003011
+BFA;Burkina Faso;Centre-Est;BFA.3_1;Boulgou;Province;BFA.3.1_1;BF.CE.BL;BF4801;789282;854004004
+BFA;Burkina Faso;Centre-Est;BFA.3_1;Koulpélogo;Province;BFA.3.2_1;BF.CE.KL;BF4802;385799;854004036
+BFA;Burkina Faso;Centre-Est;BFA.3_1;Kouritenga;Province;BFA.3.3_1;BF.CE.KR;BF4803;480765;854004014
+BFA;Burkina Faso;Centre-Nord;BFA.4_1;Bam;Province;BFA.4.1_1;BF.CN.BM;BF4901;398553;854005001
+BFA;Burkina Faso;Centre-Nord;BFA.4_1;Namentenga;Province;BFA.4.2_1;BF.CN.NM;BF4902;475527;854005017
+BFA;Burkina Faso;Centre-Nord;BFA.4_1;Sanmatenga;Province;BFA.4.3_1;BF.CN.ST;BF4903;862072;854005023
+BFA;Burkina Faso;Centre-Ouest;BFA.5_1;Boulkiemdé;Province;BFA.5.1_1;BF.CO.BK;BF5001;700924;854006005
+BFA;Burkina Faso;Centre-Ouest;BFA.5_1;Sanguié;Province;BFA.5.2_1;BF.CO.SG;BF5002;410555;854006022
+BFA;Burkina Faso;Centre-Ouest;BFA.5_1;Sissili;Province;BFA.5.3_1;BF.CO.SS;BF5003;307664;854006025
+BFA;Burkina Faso;Centre-Ouest;BFA.5_1;Ziro;Province;BFA.5.4_1;BF.CO.ZR;BF5004;270578;854006044
+BFA;Burkina Faso;Centre-Sud;BFA.6_1;Bazèga;Province;BFA.6.1_1;BF.CS.BZ;BF5101;319215;854007002
+BFA;Burkina Faso;Centre-Sud;BFA.6_1;Nahouri;Province;BFA.6.2_1;BF.CS.NR;BF5102;228031;854007016
+BFA;Burkina Faso;Centre-Sud;BFA.6_1;Zoundwéogo;Province;BFA.6.3_1;BF.CS.ZW;BF5103;649961;854007030
+BFA;Burkina Faso;Est;BFA.8_1;Gnagna;Province;BFA.8.1_1;BF.ES.GG;BF5201;596841;854008008
+BFA;Burkina Faso;Est;BFA.8_1;Gourma;Province;BFA.8.2_1;BF.ES.GM;BF5202;456817;854008009
+BFA;Burkina Faso;Est;BFA.8_1;Komandjoari;Province;BFA.8.3_1;BF.ES.KJ;BF5203;126332;854008034
+BFA;Burkina Faso;Est;BFA.8_1;Kompienga;Province;BFA.8.4_1;BF.ES.KP;BF5204;130926;854008035
+BFA;Burkina Faso;Est;BFA.8_1;Tapoa;Province;BFA.8.5_1;BF.ES.TA;BF5205;523250;854008028
+BFA;Burkina Faso;Haut-Bassins;BFA.9_1;Houet;Province;BFA.9.1_1;BF.HB.HO;BF5301;1409904;854009010
+BFA;Burkina Faso;Haut-Bassins;BFA.9_1;Kénédougou;Province;BFA.9.2_1;BF.HB.KN;BF5302;435108;854009012
+BFA;Burkina Faso;Haut-Bassins;BFA.9_1;Tuy;Province;BFA.9.3_1;BF.HB.TU;BF5303;345817;854009042
+BFA;Burkina Faso;Nord;BFA.10_1;Loroum;Province;BFA.10.1_1;BF.NO.LO;BF5401;205394;854010039
+BFA;Burkina Faso;Nord;BFA.10_1;Passoré;Province;BFA.10.2_1;BF.NO.PA;BF5402;447406;854010020
+BFA;Burkina Faso;Nord;BFA.10_1;Yatenga;Province;BFA.10.3_1;BF.NO.YT;BF5403;783269;854010029
+BFA;Burkina Faso;Nord;BFA.10_1;Zondoma;Province;BFA.10.4_1;BF.NO.ZM;BF5404;241473;854010045
+BFA;Burkina Faso;Plateau-Central;BFA.11_1;Ganzourgou;Province;BFA.11.1_1;BF.PC.GZ;BF5501;452074;854011007
+BFA;Burkina Faso;Plateau-Central;BFA.11_1;Kourwéogo;Province;BFA.11.2_1;BF.PC.KW;BF5502;189937;854011037
+BFA;Burkina Faso;Plateau-Central;BFA.11_1;Oubritenga;Province;BFA.11.3_1;BF.PC.OB;BF5503;333557;854011018
+BFA;Burkina Faso;Sahel;BFA.12_1;Oudalan;Province;BFA.12.1_1;BF.SA.OD;BF5601;297228;854012019
+BFA;Burkina Faso;Sahel;BFA.12_1;Séno;Province;BFA.12.2_1;BF.SA.SE;BF5602;385900;854012024
+BFA;Burkina Faso;Sahel;BFA.12_1;Soum;Province;BFA.12.3_1;BF.SA.SM;BF5603;516396;854012026
+BFA;Burkina Faso;Sahel;BFA.12_1;Yagha;Province;BFA.12.4_1;BF.SA.YG;BF5604;238324;854012043
+BFA;Burkina Faso;Sud-Ouest;BFA.13_1;Bougouriba;Province;BFA.13.1_1;BF.SO.BB;BF5701;148270;854013003
+BFA;Burkina Faso;Sud-Ouest;BFA.13_1;Ioba;Province;BFA.13.2_1;BF.SO.IO;BF5702;266294;854013033
+BFA;Burkina Faso;Sud-Ouest;BFA.13_1;Noumbiel;Province;BFA.13.3_1;BF.SO.NB;BF5703;103673;854013041
+BFA;Burkina Faso;Sud-Ouest;BFA.13_1;Poni;Province;BFA.13.4_1;BF.SO.PO;BF5704;373292;854013021

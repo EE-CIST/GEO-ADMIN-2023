@@ -1,79 +1,79 @@
-GID_0;COUNTRY;NAME_1;GID_1;NAME_2;TYPE_2;GID_2;HASC_2;ADM2PCODE;POP2019
-BEN;Benin;Alibori;BEN.1_1;Banikoara;Commune;BEN.1.1_1;BJ.AL.BA;BJ0101;292 778   
-BEN;Benin;Alibori;BEN.1_1;Gogounou;Commune;BEN.1.2_1;BJ.AL.GO;BJ0102;139 544   
-BEN;Benin;Alibori;BEN.1_1;Kandi;Commune;BEN.1.3_1;BJ.AL.KN;BJ0103;212 883   
-BEN;Benin;Alibori;BEN.1_1;Karimama;Commune;BEN.1.4_1;BJ.AL.KR;BJ0104;78 785   
-BEN;Benin;Alibori;BEN.1_1;Malanville;Commune;BEN.1.5_1;BJ.AL.MA;BJ0105;200 243   
-BEN;Benin;Alibori;BEN.1_1;Ségbana;Commune;BEN.1.6_1;BJ.AL.SE;BJ0106;105 773   
-BEN;Benin;Atakora;BEN.2_1;Boukoumbé;Commune;BEN.2.1_1;BJ.AK.BO;BJ0201;97 898   
-BEN;Benin;Atakora;BEN.2_1;Cobly;Commune;BEN.2.2_1;BJ.AK.CB;BJ0202;118 969   
-BEN;Benin;Atakora;BEN.2_1;Kérou;Commune;BEN.2.3_1;BJ.AK.KE;BJ0203;80 271   
-BEN;Benin;Atakora;BEN.2_1;Kouandé;Commune;BEN.2.4_1;BJ.AK.KO;BJ0204;132 442   
-BEN;Benin;Atakora;BEN.2_1;Matéri;Commune;BEN.2.5_1;BJ.AK.MA;BJ0205;135 312   
-BEN;Benin;Atakora;BEN.2_1;Natitingou;Commune;BEN.2.6_1;BJ.AK.NA;BJ0206;123 301   
-BEN;Benin;Atakora;BEN.2_1;Péhunco;Commune;BEN.2.7_1;BJ.AK.PE;BJ0207;92 873   
-BEN;Benin;Atakora;BEN.2_1;Tanguiéta;Commune;BEN.2.8_1;BJ.AK.TA;BJ0208;88 951   
-BEN;Benin;Atakora;BEN.2_1;Toucountouna;Commune;BEN.2.9_1;BJ.AK.TO;BJ0209;47 232   
-BEN;Benin;Atlantique;BEN.3_1;Abomey-Calavi;Commune;BEN.3.1_1;BJ.AQ.AC;BJ0301;779 343   
-BEN;Benin;Atlantique;BEN.3_1;Allada;Commune;BEN.3.2_1;BJ.AQ.AL;BJ0302;151 405   
-BEN;Benin;Atlantique;BEN.3_1;Kpomassè;Commune;BEN.3.3_1;BJ.AQ.KP;BJ0303;80 323   
-BEN;Benin;Atlantique;BEN.3_1;Ouidah;Commune;BEN.3.4_1;BJ.AQ.OU;BJ0304;192 397   
-BEN;Benin;Atlantique;BEN.3_1;Sô-Ava;Commune;BEN.3.5_1;BJ.AQ.SA;BJ0305;140 759   
-BEN;Benin;Atlantique;BEN.3_1;Toffo;Commune;BEN.3.6_1;BJ.AQ.TF;BJ0306;120 618   
-BEN;Benin;Atlantique;BEN.3_1;Tori-Bossito;Commune;BEN.3.7_1;BJ.AQ.TB;BJ0307;68 429   
-BEN;Benin;Atlantique;BEN.3_1;Zè;Commune;BEN.3.8_1;BJ.AQ.ZE;BJ0308;126 944   
-BEN;Benin;Borgou;BEN.4_1;Bembèrèkè;Commune;BEN.4.1_1;BJ.BO.BE;BJ0401;155 849   
-BEN;Benin;Borgou;BEN.4_1;Kalalé;Commune;BEN.4.2_1;BJ.BO.KL;BJ0402;200 527   
-BEN;Benin;Borgou;BEN.4_1;N'Dali;Commune;BEN.4.3_1;BJ.BO.ND;BJ0403;134 894   
-BEN;Benin;Borgou;BEN.4_1;Nikki;Commune;BEN.4.4_1;BJ.BO.NI;BJ0404;179 568   
-BEN;Benin;Borgou;BEN.4_1;Parakou;Commune;BEN.4.5_1;BJ.BO.PA;BJ0405;303 345   
-BEN;Benin;Borgou;BEN.4_1;Pèrèrè;Commune;BEN.4.6_1;BJ.BO.PE;BJ0406;93 788   
-BEN;Benin;Borgou;BEN.4_1;Sinendé;Commune;BEN.4.7_1;BJ.BO.SI;BJ0407;108 853   
-BEN;Benin;Borgou;BEN.4_1;Tchaourou;Commune;BEN.4.8_1;BJ.BO.TC;BJ0408;264 948   
-BEN;Benin;Collines;BEN.5_1;Bantè;Commune;BEN.5.1_1;BJ.CL.BA;BJ0501;127 265   
-BEN;Benin;Collines;BEN.5_1;Dassa-Zoumè;Commune;BEN.5.2_1;BJ.CL.DZ;BJ0502;133 130   
-BEN;Benin;Collines;BEN.5_1;Glazoué;Commune;BEN.5.3_1;BJ.CL.GL;BJ0503;147 747   
-BEN;Benin;Collines;BEN.5_1;Ouèssè;Commune;BEN.5.4_1;BJ.CL.OS;BJ0504;168 628   
-BEN;Benin;Collines;BEN.5_1;Savalou;Commune;BEN.5.5_1;BJ.CL.SL;BJ0505;171 634   
-BEN;Benin;Collines;BEN.5_1;Savè;Commune;BEN.5.6_1;BJ.CL.SE;BJ0506;103 512   
-BEN;Benin;Donga;BEN.6_1;Bassila;Commune;BEN.6.1_1;BJ.DO.BA;BJ0701;154 469   
-BEN;Benin;Donga;BEN.6_1;Copargo;Commune;BEN.6.2_1;BJ.DO.CP;BJ0703;84 229   
-BEN;Benin;Donga;BEN.6_1;Ouaké;Commune;BEN.6.4_1;BJ.DO.OU;BJ0704;88 210   
-BEN;Benin;Donga;BEN.6_1;Djougou Rural;NA;BEN.6.5_1;NA;BJ0702;317 994   
-BEN;Benin;Donga;BEN.6_1;Djougou Urbain;NA;BEN.6.6_1;NA;BJ0702;0
-BEN;Benin;Kouffo;BEN.7_1;Aplahoué;Commune;BEN.7.1_1;BJ.CF.AP;BJ0601;203 168   
-BEN;Benin;Kouffo;BEN.7_1;Djakotomey;Commune;BEN.7.2_1;NA;BJ0602;159 141   
-BEN;Benin;Kouffo;BEN.7_1;Klouékanmè;Commune;BEN.7.4_1;BJ.CF.KL;BJ0604;152 692   
-BEN;Benin;Kouffo;BEN.7_1;Lalo;Commune;BEN.7.5_1;BJ.CF.LA;BJ0605;142 398   
-BEN;Benin;Kouffo;BEN.7_1;Toviklin;Commune;BEN.7.6_1;BJ.CF.TO;BJ0606;105 217   
-BEN;Benin;Kouffo;BEN.7_1;Dogbo;Commune;BEN.9.6_1;BJ.CF.DO;BJ0603;122 367   
-BEN;Benin;Littoral;BEN.8_1;Cotonou;Commune;BEN.8.1_1;BJ.LI.CO;BJ0800;806 243   
-BEN;Benin;Mono;BEN.9_1;Athiémè;Commune;BEN.9.1_1;BJ.MO.AT;BJ0901;67 066   
-BEN;Benin;Mono;BEN.9_1;Bopa;Commune;BEN.9.2_1;BJ.MO.BO;BJ0902;114 322   
-BEN;Benin;Mono;BEN.9_1;Comè;Commune;BEN.9.3_1;BJ.MO.CO;BJ0903;94 976   
-BEN;Benin;Mono;BEN.9_1;Grand-Popo;Commune;BEN.9.4_1;BJ.MO.GP;BJ0904;68 434   
-BEN;Benin;Mono;BEN.9_1;Houéyogbé;Commune;BEN.9.5_1;BJ.MO.HO;BJ0905;120 982   
-BEN;Benin;Mono;BEN.9_1;Lokossa;NA;BEN.9.7_1;NA;BJ0906;124 626   
-BEN;Benin;Ouémé;BEN.10_1;Adjarra;Commune;BEN.10.1_1;BJ.OU.AA;BJ1001;115 678   
-BEN;Benin;Ouémé;BEN.10_1;Adjohoun;Commune;BEN.10.2_1;BJ.OU.AH;BJ1002;89 435   
-BEN;Benin;Ouémé;BEN.10_1;Aguégués;Commune;BEN.10.3_1;BJ.OU.AG;BJ1003;52 912   
-BEN;Benin;Ouémé;BEN.10_1;Akpro-Missérété;Commune;BEN.10.4_1;BJ.OU.AM;BJ1004;124 309   
-BEN;Benin;Ouémé;BEN.10_1;Avrankou;Commune;BEN.10.5_1;BJ.OU.AV;BJ1005;152 043   
-BEN;Benin;Ouémé;BEN.10_1;Bonou;Commune;BEN.10.6_1;BJ.OU.BO;BJ1006;52 661   
-BEN;Benin;Ouémé;BEN.10_1;Dangbo;Commune;BEN.10.7_1;BJ.OU.DA;BJ1007;114 493   
-BEN;Benin;Ouémé;BEN.10_1;Porto-Novo;Commune;BEN.10.8_1;BJ.OU.PN;BJ1008;313 847   
-BEN;Benin;Ouémé;BEN.10_1;Sèmè-Kpodji;Commune;BEN.10.9_1;BJ.OU.SK;BJ1009;264 429   
-BEN;Benin;Plateau;BEN.11_1;Adja-Ouèrè;Commune;BEN.11.1_1;BJ.PL.AO;BJ1101;138 068   
-BEN;Benin;Plateau;BEN.11_1;Ifangni;Commune;BEN.11.2_1;BJ.PL.IF;BJ1102;131 765   
-BEN;Benin;Plateau;BEN.11_1;Kétou;Commune;BEN.11.3_1;BJ.PL.KE;BJ1103;186 836   
-BEN;Benin;Plateau;BEN.11_1;Pobè;Commune;BEN.11.4_1;BJ.PL.PB;BJ1104;146 853   
-BEN;Benin;Plateau;BEN.11_1;Sakété;Commune;BEN.11.5_1;BJ.PL.SA;BJ1105;135 466   
-BEN;Benin;Zou;BEN.12_1;Abomey;Commune;BEN.12.1_1;BJ.ZO.AB;BJ1201;109 551   
-BEN;Benin;Zou;BEN.12_1;Agbangnizoun;Commune;BEN.12.2_1;BJ.ZO.AG;BJ1202;86 142   
-BEN;Benin;Zou;BEN.12_1;Bohicon;Commune;BEN.12.3_1;BJ.ZO.BO;BJ1203;203 967   
-BEN;Benin;Zou;BEN.12_1;Covè;Commune;BEN.12.4_1;BJ.ZO.CO;BJ1204;60 849   
-BEN;Benin;Zou;BEN.12_1;Djidja;Commune;BEN.12.5_1;BJ.ZO.DJ;BJ1205;146 692   
-BEN;Benin;Zou;BEN.12_1;Ouinhi;Commune;BEN.12.6_1;BJ.ZO.ON;BJ1206;70 507   
-BEN;Benin;Zou;BEN.12_1;Za-Kpota;Commune;BEN.12.7_1;BJ.ZO.ZK;BJ1207;157 705   
-BEN;Benin;Zou;BEN.12_1;Zagnanado;Commune;BEN.12.8_1;BJ.ZO.ZN;BJ1208;65 380   
-BEN;Benin;Zou;BEN.12_1;Zogbodomey;Commune;BEN.12.9_1;BJ.ZO.ZB;BJ1209;110 347   
+GID_0;COUNTRY;NAME_1;GID_1;NAME_2;TYPE_2;GID_2;HASC_2;ADM2PCODE;POP2019;IPUMS_2
+BEN;Benin;Alibori;BEN.1_1;Banikoara;Commune;BEN.1.1_1;BJ.AL.BA;BJ0101;292778;204001001
+BEN;Benin;Alibori;BEN.1_1;Gogounou;Commune;BEN.1.2_1;BJ.AL.GO;BJ0102;139544;204001002
+BEN;Benin;Alibori;BEN.1_1;Kandi;Commune;BEN.1.3_1;BJ.AL.KN;BJ0103;212883;204001003
+BEN;Benin;Alibori;BEN.1_1;Karimama;Commune;BEN.1.4_1;BJ.AL.KR;BJ0104;78785;204001004
+BEN;Benin;Alibori;BEN.1_1;Malanville;Commune;BEN.1.5_1;BJ.AL.MA;BJ0105;200243;204001005
+BEN;Benin;Alibori;BEN.1_1;Ségbana;Commune;BEN.1.6_1;BJ.AL.SE;BJ0106;105773;204001006
+BEN;Benin;Atakora;BEN.2_1;Boukoumbé;Commune;BEN.2.1_1;BJ.AK.BO;BJ0201;97898;204002001
+BEN;Benin;Atakora;BEN.2_1;Cobly;Commune;BEN.2.2_1;BJ.AK.CB;BJ0202;118969;204002002
+BEN;Benin;Atakora;BEN.2_1;Kérou;Commune;BEN.2.3_1;BJ.AK.KE;BJ0203;80271;204002003
+BEN;Benin;Atakora;BEN.2_1;Kouandé;Commune;BEN.2.4_1;BJ.AK.KO;BJ0204;132442;204002004
+BEN;Benin;Atakora;BEN.2_1;Matéri;Commune;BEN.2.5_1;BJ.AK.MA;BJ0205;135312;204002005
+BEN;Benin;Atakora;BEN.2_1;Natitingou;Commune;BEN.2.6_1;BJ.AK.NA;BJ0206;123301;204002006
+BEN;Benin;Atakora;BEN.2_1;Péhunco;Commune;BEN.2.7_1;BJ.AK.PE;BJ0207;92873;204002007
+BEN;Benin;Atakora;BEN.2_1;Tanguiéta;Commune;BEN.2.8_1;BJ.AK.TA;BJ0208;88951;204002008
+BEN;Benin;Atakora;BEN.2_1;Toucountouna;Commune;BEN.2.9_1;BJ.AK.TO;BJ0209;47232;204002009
+BEN;Benin;Atlantique;BEN.3_1;Abomey-Calavi;Commune;BEN.3.1_1;BJ.AQ.AC;BJ0301;779343;204003001
+BEN;Benin;Atlantique;BEN.3_1;Allada;Commune;BEN.3.2_1;BJ.AQ.AL;BJ0302;151405;204003002
+BEN;Benin;Atlantique;BEN.3_1;Kpomassè;Commune;BEN.3.3_1;BJ.AQ.KP;BJ0303;80323;204003003
+BEN;Benin;Atlantique;BEN.3_1;Ouidah;Commune;BEN.3.4_1;BJ.AQ.OU;BJ0304;192397;204003004
+BEN;Benin;Atlantique;BEN.3_1;Sô-Ava;Commune;BEN.3.5_1;BJ.AQ.SA;BJ0305;140759;204003005
+BEN;Benin;Atlantique;BEN.3_1;Toffo;Commune;BEN.3.6_1;BJ.AQ.TF;BJ0306;120618;204003006
+BEN;Benin;Atlantique;BEN.3_1;Tori-Bossito;Commune;BEN.3.7_1;BJ.AQ.TB;BJ0307;68429;204003007
+BEN;Benin;Atlantique;BEN.3_1;Zè;Commune;BEN.3.8_1;BJ.AQ.ZE;BJ0308;126944;204003008
+BEN;Benin;Borgou;BEN.4_1;Bembèrèkè;Commune;BEN.4.1_1;BJ.BO.BE;BJ0401;155849;204004001
+BEN;Benin;Borgou;BEN.4_1;Kalalé;Commune;BEN.4.2_1;BJ.BO.KL;BJ0402;200527;204004002
+BEN;Benin;Borgou;BEN.4_1;N'Dali;Commune;BEN.4.3_1;BJ.BO.ND;BJ0403;134894;204004003
+BEN;Benin;Borgou;BEN.4_1;Nikki;Commune;BEN.4.4_1;BJ.BO.NI;BJ0404;179568;204004004
+BEN;Benin;Borgou;BEN.4_1;Parakou;Commune;BEN.4.5_1;BJ.BO.PA;BJ0405;303345;204004005
+BEN;Benin;Borgou;BEN.4_1;Pèrèrè;Commune;BEN.4.6_1;BJ.BO.PE;BJ0406;93788;204004006
+BEN;Benin;Borgou;BEN.4_1;Sinendé;Commune;BEN.4.7_1;BJ.BO.SI;BJ0407;108853;204004007
+BEN;Benin;Borgou;BEN.4_1;Tchaourou;Commune;BEN.4.8_1;BJ.BO.TC;BJ0408;264948;204004008
+BEN;Benin;Collines;BEN.5_1;Bantè;Commune;BEN.5.1_1;BJ.CL.BA;BJ0501;127265;204005001
+BEN;Benin;Collines;BEN.5_1;Dassa-Zoumè;Commune;BEN.5.2_1;BJ.CL.DZ;BJ0502;133130;204005002
+BEN;Benin;Collines;BEN.5_1;Glazoué;Commune;BEN.5.3_1;BJ.CL.GL;BJ0503;147747;204005003
+BEN;Benin;Collines;BEN.5_1;Ouèssè;Commune;BEN.5.4_1;BJ.CL.OS;BJ0504;168628;204005004
+BEN;Benin;Collines;BEN.5_1;Savalou;Commune;BEN.5.5_1;BJ.CL.SL;BJ0505;171634;204005005
+BEN;Benin;Collines;BEN.5_1;Savè;Commune;BEN.5.6_1;BJ.CL.SE;BJ0506;103512;204005006
+BEN;Benin;Kouffo;BEN.7_1;Aplahoué;Commune;BEN.7.1_1;BJ.CF.AP;BJ0601;203168;204006001
+BEN;Benin;Donga;BEN.6_1;Bassila;Commune;BEN.6.1_1;BJ.DO.BA;BJ0701;154469;204007001
+BEN;Benin;Donga;BEN.6_1;Copargo;Commune;BEN.6.2_1;BJ.DO.CP;BJ0703;84229;204007002
+BEN;Benin;Kouffo;BEN.7_1;Djakotomey;Commune;BEN.7.2_1;NA;BJ0602;159141;204006002
+BEN;Benin;Donga;BEN.6_1;Djougou Rural;NA;BEN.6.5_1;NA;BJ0702;317994;204007003
+BEN;Benin;Donga;BEN.6_1;Djougou Urbain;NA;BEN.6.6_1;NA;BJ0702;0;204007003
+BEN;Benin;Kouffo;BEN.7_1;Dogbo;Commune;BEN.9.6_1;BJ.CF.DO;BJ0603;122367;204006003
+BEN;Benin;Kouffo;BEN.7_1;Klouékanmè;Commune;BEN.7.4_1;BJ.CF.KL;BJ0604;152692;204006004
+BEN;Benin;Kouffo;BEN.7_1;Lalo;Commune;BEN.7.5_1;BJ.CF.LA;BJ0605;142398;204006005
+BEN;Benin;Donga;BEN.6_1;Ouaké;Commune;BEN.6.4_1;BJ.DO.OU;BJ0704;88210;204007004
+BEN;Benin;Kouffo;BEN.7_1;Toviklin;Commune;BEN.7.6_1;BJ.CF.TO;BJ0606;105217;204006006
+BEN;Benin;Littoral;BEN.8_1;Cotonou;Commune;BEN.8.1_1;BJ.LI.CO;BJ0800;806243;204008001
+BEN;Benin;Mono;BEN.9_1;Athiémè;Commune;BEN.9.1_1;BJ.MO.AT;BJ0901;67066;204009001
+BEN;Benin;Mono;BEN.9_1;Bopa;Commune;BEN.9.2_1;BJ.MO.BO;BJ0902;114322;204009002
+BEN;Benin;Mono;BEN.9_1;Comè;Commune;BEN.9.3_1;BJ.MO.CO;BJ0903;94976;204009003
+BEN;Benin;Mono;BEN.9_1;Grand-Popo;Commune;BEN.9.4_1;BJ.MO.GP;BJ0904;68434;204009004
+BEN;Benin;Mono;BEN.9_1;Houéyogbé;Commune;BEN.9.5_1;BJ.MO.HO;BJ0905;120982;204009005
+BEN;Benin;Mono;BEN.9_1;Lokossa;NA;BEN.9.7_1;NA;BJ0906;124626;204009006
+BEN;Benin;Ouémé;BEN.10_1;Adjarra;Commune;BEN.10.1_1;BJ.OU.AA;BJ1001;115678;204010001
+BEN;Benin;Ouémé;BEN.10_1;Adjohoun;Commune;BEN.10.2_1;BJ.OU.AH;BJ1002;89435;204010002
+BEN;Benin;Ouémé;BEN.10_1;Aguégués;Commune;BEN.10.3_1;BJ.OU.AG;BJ1003;52912;204010003
+BEN;Benin;Ouémé;BEN.10_1;Akpro-Missérété;Commune;BEN.10.4_1;BJ.OU.AM;BJ1004;124309;204010004
+BEN;Benin;Ouémé;BEN.10_1;Avrankou;Commune;BEN.10.5_1;BJ.OU.AV;BJ1005;152043;204010005
+BEN;Benin;Ouémé;BEN.10_1;Bonou;Commune;BEN.10.6_1;BJ.OU.BO;BJ1006;52661;204010006
+BEN;Benin;Ouémé;BEN.10_1;Dangbo;Commune;BEN.10.7_1;BJ.OU.DA;BJ1007;114493;204010007
+BEN;Benin;Ouémé;BEN.10_1;Porto-Novo;Commune;BEN.10.8_1;BJ.OU.PN;BJ1008;313847;204010008
+BEN;Benin;Ouémé;BEN.10_1;Sèmè-Kpodji;Commune;BEN.10.9_1;BJ.OU.SK;BJ1009;264429;204010009
+BEN;Benin;Plateau;BEN.11_1;Adja-Ouèrè;Commune;BEN.11.1_1;BJ.PL.AO;BJ1101;138068;204011001
+BEN;Benin;Plateau;BEN.11_1;Ifangni;Commune;BEN.11.2_1;BJ.PL.IF;BJ1102;131765;204011002
+BEN;Benin;Plateau;BEN.11_1;Kétou;Commune;BEN.11.3_1;BJ.PL.KE;BJ1103;186836;204011003
+BEN;Benin;Plateau;BEN.11_1;Pobè;Commune;BEN.11.4_1;BJ.PL.PB;BJ1104;146853;204011004
+BEN;Benin;Plateau;BEN.11_1;Sakété;Commune;BEN.11.5_1;BJ.PL.SA;BJ1105;135466;204011005
+BEN;Benin;Zou;BEN.12_1;Abomey;Commune;BEN.12.1_1;BJ.ZO.AB;BJ1201;109551;204012001
+BEN;Benin;Zou;BEN.12_1;Agbangnizoun;Commune;BEN.12.2_1;BJ.ZO.AG;BJ1202;86142;204012002
+BEN;Benin;Zou;BEN.12_1;Bohicon;Commune;BEN.12.3_1;BJ.ZO.BO;BJ1203;203967;204012003
+BEN;Benin;Zou;BEN.12_1;Covè;Commune;BEN.12.4_1;BJ.ZO.CO;BJ1204;60849;204012004
+BEN;Benin;Zou;BEN.12_1;Djidja;Commune;BEN.12.5_1;BJ.ZO.DJ;BJ1205;146692;204012005
+BEN;Benin;Zou;BEN.12_1;Ouinhi;Commune;BEN.12.6_1;BJ.ZO.ON;BJ1206;70507;204012006
+BEN;Benin;Zou;BEN.12_1;Za-Kpota;Commune;BEN.12.7_1;BJ.ZO.ZK;BJ1207;157705;204012007
+BEN;Benin;Zou;BEN.12_1;Zagnanado;Commune;BEN.12.8_1;BJ.ZO.ZN;BJ1208;65380;204012008
+BEN;Benin;Zou;BEN.12_1;Zogbodomey;Commune;BEN.12.9_1;BJ.ZO.ZB;BJ1209;110347;204012009
