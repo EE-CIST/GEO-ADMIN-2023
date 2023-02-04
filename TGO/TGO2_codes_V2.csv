@@ -11,7 +11,7 @@ TGO;Togo;Kara;TGO.2_1;Dankpen;Préfecture;TGO.2.7_1;TG.KA.DP;TG0204;166758;76800
 TGO;Togo;Kara;TGO.2_1;Doufelgou;Préfecture;TGO.2.4_1;TG.KA.DO;TG0205;102197;768002020
 TGO;Togo;Kara;TGO.2_1;Kéran;Préfecture;TGO.2.5_1;TG.KA.KE;TG0206;120810;768002021
 TGO;Togo;Kara;TGO.2_1;Kozah;Préfecture;TGO.2.6_1;TG.KA.KO;TG0207;295156;768002018
-TGO;Togo;Maritime;TGO.3_1;Agoe-Nyive;Préfecture;TGO.3.1_2;NA;;;
+TGO;Togo;Maritime;TGO.3_1;Agoe-Nyive;Préfecture;TGO.3.1_2;NA;TG0303;;768001002
 TGO;Togo;Maritime;TGO.3_1;Avé;Préfecture;TGO.3.2_2;TG.MA.AV;TG0301;121785;768001008
 TGO;Togo;Maritime;TGO.3_1;Bas-Mono;Préfecture;TGO.3.3_2;TG.MA.BM;TG0302;114312;768001004
 TGO;Togo;Maritime;TGO.3_1;Golfe;Préfecture;TGO.3.4_2;TG.MA.GO;TG0303;956393;768001002
@@ -34,8 +34,8 @@ TGO;Togo;Plateaux;TGO.4_1;Ogou;Préfecture;TGO.4.11_2;TG.PL.OG;TG0409;254223;768
 TGO;Togo;Plateaux;TGO.4_1;Wawa;Préfecture;TGO.4.12_2;TG.PL.WA;TG0402;131061;768002005
 TGO;Togo;Savanes;TGO.5_1;Cinkassé;Préfecture;TGO.5.1_2;TG.SA.CI;TG0517;100875;768005002
 TGO;Togo;Savanes;TGO.5_1;Kpendjal;Préfecture;TGO.5.2_2;TG.SA.KP;TG0513;197108;768005003
-TGO;Togo;Savanes;TGO.5_1;Naki-Ouest;Préfecture;TGO.5.3_2;NA;;;
+TGO;Togo;Savanes;TGO.5_1;Naki-Ouest;Préfecture;TGO.5.3_2;NA;TG0516;;768005001
 TGO;Togo;Savanes;TGO.5_1;Oti;Préfecture;TGO.5.4_2;TG.SA.OT;TG0514;243141;768005004
-TGO;Togo;Savanes;TGO.5_1;Oti-Sud;Préfecture;TGO.5.5_2;NA;;;
+TGO;Togo;Savanes;TGO.5_1;Oti-Sud;Préfecture;TGO.5.5_2;NA;TG0514;;768005004
 TGO;Togo;Savanes;TGO.5_1;Tandjouaré;Préfecture;TGO.5.6_2;TG.SA.TA;TG0515;151679;768005005
 TGO;Togo;Savanes;TGO.5_1;Tône;Préfecture;TGO.5.7_2;TG.SA.TO;TG0516;367039;768005001
